@@ -3,7 +3,6 @@ from random import randint
 def find_x(x,n):
   start_time=time.time()
   lst=[randint(0,1000) for i in range(n)]
-  lst=sorted(lst)
   if x in lst:
     print('Yes')
   else:
