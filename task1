@@ -1,0 +1,15 @@
+import time, random
+from random import randint
+def find_x(x,n):
+  start_time=time.time()
+  lst=[randint(0,1000) for i in range(n)]
+  lst=sorted(lst)
+  if x in lst:
+    print('Yes')
+  else:
+    print('No')
+  print(time.time()-start_time)
+find_x(10,1) #время 0.000110626220703125 сек
+find_x(10,100) #время 0.00016570091247558594 сек 
+find_x(10,1000) #время 0.0013842582702636719 сек
+find_x(10,1000000)  #время 1.417074203491211 сек
